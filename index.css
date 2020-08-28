@@ -1,0 +1,88 @@
+body{
+  background-image: url(images/background-turqoise-wallpaper-turkuaz-Favim.com-1956644.jpg);
+  text-align: center;
+}
+.row{
+  text-align: left;
+  height: 10vw;
+}
+h1{
+  display: inline;
+  font-family: header-font;
+  font-size: 3.5vw;
+  color: white;
+}
+h2{
+  display: inline;
+  font-family: header-font;
+  font-size: 2vw;;
+}
+#my-div{
+  margin-left: 5%;
+  width: 3vw;
+  height: 3vw;
+  background-color: greenyellow;
+}
+
+@font-face{
+  src: url(fonts/RockFont.ttf);
+  font-family: 'header-font';
+}
+.hammer{
+  opacity: 1;
+  height: 10vw;
+  border-right: 4vw transparent solid;
+  border-left: 4vw transparent solid;
+  border-top: 1vw transparent solid;
+  border-bottom: 1vw transparent solid;
+}
+.hammer:hover{
+  cursor: pointer;
+  padding: 10.5vw transparent solid;
+}
+.moving{
+  animation-name: horizontalMovement;
+  animation-duration: 1.9s;
+}
+
+@keyframes horizontalMovement{
+  0%{margin-left: 0%;}
+  10%{margin-left: 10%;}
+  20%{margin-left: 20%;}
+  30%{margin-left: 30%;}
+  40%{margin-left: 40%;}
+  50%{margin-left: 50%;}
+  60%{margin-left: 60%;}
+  70%{margin-left: 70%;}
+  80%{margin-left: 80%;}
+  90%{margin-left: 90%;}
+  100%{margin-left: 100%;}
+}
+/* @keyframes verticalMovement{
+  0%{margin-top: 0%;}
+  10%{margin-top: 10%;}
+  20%{margin-top: 20%;}
+  30%{margin-top: 30%;}
+  40%{margin-top: 40%;}
+  50%{margin-top: 50%;}
+  50%{margin-left: 10%;}
+  60%{margin-top: 20%;}
+  70%{margin-top: 40%;}
+  80%{margin-top: 50%;}
+  90%{margin-top: 60%;}
+  100%{margin-top: 70%;}
+}
+@keyframes L-shape{
+  0%{margin-left: 0%;}
+  10%{margin-left: 10%;}
+  20%{margin-left: 20%;}
+  30%{margin-left: 30%;}
+  40%{margin-left: 40%;}
+  50%{margin-left: 50%;}
+  60%{margin-top: 10%;}
+  70%{margin-top: 20%;}
+  80%{margin-top: 30%;}
+  90%{margin-top: 40%;}
+  100%{margin-top: 50%;}
+
+} */
