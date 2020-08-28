@@ -4,70 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
-  <title>CantTouchThis.js</title>
+  <link rel="stylesheet" href="welcome-page.css">
+  <title>Can't touch this!js</title>
 </head>
 <body>
-  <div>
-    <h1> Cant Touch this </h1><button onclick="playGame()"> Play Game </button> <h2> Your Score: </h2><h2 id="scoreNode">0</h2>
-  </div>
-  <audio src="audio/mc_hammer_u_can_t_touch_this_chorus_loop_-1791854068012136333.mp3" > </audio>
-  <div>
-    
-  </div>
-  <div class="row" id="one">
+  <h1 class="welcome-title"> Can't Touch </h1>
+    <h1 class="welcome-title">This!</h1>
 
-  </div>
-  <div class="row" id="two">
+  <a id="play-button" href="./game.html"> Play game </a>
 
-  </div>
-  <div class="row" id="three">
-
-  </div>
-  <div class="row" id="four">
-
-  </div>
-  <div class="row" id="five">
-
-  </div>
+  <p>A game by <a href="https://github.com/grahamfalconer">Graham Falconer</a></p>
 </body>
-<script src="McHammer.js"></script>
-<script>
-  score = 0
-  audio = document.getElementsByTagName('audio')[0]
-  rows = document.getElementsByClassName('row');
-  scoreNode = document.getElementById('scoreNode')
-  returnRandomRow = function(){
-    return rows[Math.floor(Math.random() * rows.length)];
-  }
-
-  spawnHammer = function(speed){
-    newImg = document.createElement('img')
-    newImg.setAttribute('src', 'images/mc-hammer-transparent-png-clipart-free-download-ya-webdesign-mc-hammer-png-470_959.gif')
-    randomRow = returnRandomRow()
-    randomRow.appendChild(newImg)
-    newImg.setAttribute('class', 'moving hammer')
-    newImg.setAttribute('id', 'mchammer')
-    newImg.setAttribute('onclick', 'removeElement(this)')
-    setTimeout(function(){
-      newImg.remove();
-    }, 1900)
-  }
-  playGame = function(){
-    audio.play();
-    setInterval(() => {
-      spawnHammer();
-    }, 1905);
-  }
-  removeElement = function(el){
-    score += 1
-    var element = el;
-    element.remove();
-    scoreNode.innerHTML = score;
-  }
-
-
-
-
-
-</script>
 </html>

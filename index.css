@@ -1,6 +1,7 @@
 body{
   background-image: url(images/background-turqoise-wallpaper-turkuaz-Favim.com-1956644.jpg);
   text-align: center;
+  background-size: 10%;
 }
 .row{
   text-align: left;
@@ -10,12 +11,17 @@ h1{
   display: inline;
   font-family: header-font;
   font-size: 3.5vw;
-  color: white;
 }
 h2{
   display: inline;
   font-family: header-font;
   font-size: 2vw;;
+}
+.logo{
+  color: rgb(236, 112, 99 );
+  background-color: black;
+  border-radius: 0.5vw;
+  padding: 0.5vw;
 }
 #my-div{
   margin-left: 5%;
@@ -23,9 +29,16 @@ h2{
   height: 3vw;
   background-color: greenyellow;
 }
+#scoreNode, #timeNode{
+  border-radius: 0.5vw;
+  padding: 0.5vw;
+  background-color: black;
+  color: rgb(236, 112, 99 );
+  font-size: larger;
+}
 
 @font-face{
-  src: url(fonts/RockFont.ttf);
+  src: url(fonts/Bombing.ttf);
   font-family: 'header-font';
 }
 .hammer{

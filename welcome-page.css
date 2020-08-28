@@ -1,0 +1,23 @@
+.welcome-title{
+  color: rgb(236, 112, 99 );
+  display: block;
+  font-size: 10vw;
+}
+
+#play-button{
+  border-radius: 2.5vw;
+  padding: 2vw;
+  border: 0.5vw solid black;
+  font-family: header-font;
+  color: steelblue;
+  background-color: white;
+  font-size: 6vw;
+
+}
+#play-button:hover{
+  background-color: steelblue;
+  color: white;
+}
+a, p{
+  font-size: 3vw;
+}
